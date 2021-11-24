@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: blue;
+}
+
+textarea {
+  min-width: 45%;
+  min-height: 120px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  background-color: greenyellow;
+}
+
+header h1 {
+  font-size: 1.2em;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: greenyellow;
+}

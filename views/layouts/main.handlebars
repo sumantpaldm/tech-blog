@@ -1,33 +1,35 @@
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Tech Blog</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header>
+        <h1>
+          <a href="/">The Tech Blog</a>
+        </h1>
         <nav>
-          <a href="/" class="nav-link">Home</a>
           {{#if loggedIn}}
-            <a href="/dashboard" class="nav-link">Dashboard</a>
-            <button id="logout" class="logout">Logout</button>
+
+            <a href="/">HomePage</a>
+            <a href="/dashboard">Dashboard</a>
+            <button id="logout">Logout</button>
           {{else}}
-            <a href="/login">login</a>
+            <a href="/login">Login</a>
           {{/if}}
         </nav>
-        <div class="title-container">
-          <h1>Tech Blog</h1>
-        </div>
       </header>
       <main>
         {{{body}}}
       </main>
       <footer>
-        SUMANT SINGH
+        thanks for visiting
+
       </footer>
     </div>
 
@@ -35,5 +37,4 @@
       <script src="/javascript/logout.js"></script>
     {{/if}}
   </body>
-
 </html>

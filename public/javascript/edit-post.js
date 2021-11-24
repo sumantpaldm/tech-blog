@@ -1,9 +1,10 @@
+
 async function editFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="post-title"]').value.trim();
-  const comment = document
-    .querySelector('input[name="post-comment"]')
+  const post_text = document
+    .querySelector('textarea[name="post-text"]')
     .value.trim();
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
@@ -12,15 +13,13 @@ async function editFormHandler(event) {
     method: "PUT",
     body: JSON.stringify({
       title,
-      comment,
-      description: comment,
+      post_text,
     }),
     headers: {
       "Content-Type": "application/json",
     },
   });
 
-  console.log(response);
   if (response.ok) {
     document.location.replace("/dashboard/");
   } else {
