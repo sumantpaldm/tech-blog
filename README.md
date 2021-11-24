@@ -2,6 +2,11 @@
 
 14. Model View Controller Challenge : TECH BLOG
 
+## heroku deployment
+
+
+https://guarded-hollows-80447.herokuapp.com/
+
 ## Description
 
 This is a node-based application build using SQL (sequelize).
